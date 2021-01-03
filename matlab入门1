@@ -1,0 +1,45 @@
+\documentclass[cn,11pt]{elegantbook}%xelatex ,toc=twocol
+\title{Matlab一小时入门}
+\subtitle{---小知识}
+\author{石zy}
+\institute{****大学}
+\date{\today}
+\version{3.08}
+\extrainfo{Victory won't come to us unless we go to it.  M. Moore}
+%\logo{logo.png}
+\cover{mylog.jpg}
+\setcounter{tocdepth}{3}
+%\usepackage[semicolon,round,sort&compress,sectionbib]{natbib}  %
+\usepackage{chapterbib} %每个章节添加参考文献
+\usepackage{xcolor}
+\usepackage{hyperref}
+\newcommand{\myblue}[1]{\textcolor[rgb]{0.00,0.59,0.00}{\heiti #1}}
+
+%\usepackage{pdfpages}
+\lstset{language= matlab,
+   % backgroundcolor=\color{red!24!green!23!blue!23},%0-63%代码块背景色为浅灰色
+    %rulesepcolor= \color{gray}, %代码块边框颜色
+    breaklines=true,  %代码过长则换行
+    numbers=left, %行号在左侧显示
+    numberstyle= \large,%行号字体
+    keywordstyle= \color{blue},%关键字颜色
+    commentstyle=\color{gray}, %注释颜色
+    frame=shadowbox%用方框框住代码块
+    }
+
+\begin{document}
+\maketitle
+\mainmatter
+\tableofcontents
+
+\hypersetup{pageanchor=true}
+\setcounter{secnumdepth}{10}
+\setcounter{tocdepth}{3}
+
+\input{chap1-intro}
+\input{chap2-matrix}
+\input{chap3-plot}
+
+
+\input{chap5-ode}
+\end{document}
